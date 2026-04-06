@@ -15,5 +15,6 @@ spec:
       containers:
       - name: nginx-container
         image: gauravj00/nginx-app
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
