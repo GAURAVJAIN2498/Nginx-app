@@ -22,7 +22,7 @@ jobs:
     - name: Push Docker Image
       run: docker push ${{ secrets.DOCKER_USER }}/nginx-app
 
-    - name: Setup Kubeconfig
+    - name: Setup Kubeconfig File
       run: |
         mkdir -p $HOME/.kube
         echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config

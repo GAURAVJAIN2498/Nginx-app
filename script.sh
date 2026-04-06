@@ -3,7 +3,7 @@
 URL="https://google.com"
 LOG_FILE="website.log"
 
-STATUS=$(curl -o -L /dev/null -s -w "%{http_code}" $URL)
+STATUS=$(curl -L -o /dev/null -s -w "%{http_code}" $URL)
 
 DATE=$(date)
 
