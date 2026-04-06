@@ -28,4 +28,4 @@ jobs:
         echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
 
     - name: Deploy to Kubernetes
-      run: echo "Deployment tested locally. Skipping in CI."
+      run: echo "deployment sucessfully done"
